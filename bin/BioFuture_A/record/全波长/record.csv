@@ -1,0 +1,2 @@
+header:,ID,Name,Coef1,Watch1,Value1,Coef2,Watch2,Value2,Coef3,Watch3,Value3,Coef4,Watch4,Value4,Coef5,Watch5,Value5,Measure,FileName
+record:,1,S,1,200,-5.15598,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,UV-VIS,20171101101923.csv

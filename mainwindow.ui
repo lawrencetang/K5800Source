@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1427</width>
+    <height>131</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1427</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>64</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNa"/>
+   <addaction name="actionPt"/>
+   <addaction name="actionCc"/>
+   <addaction name="actionUv"/>
+   <addaction name="actionMa"/>
+   <addaction name="actionDy"/>
+   <addaction name="actionKm"/>
+   <addaction name="separator"/>
+   <addaction name="actionDc"/>
+   <addaction name="actionCt"/>
+   <addaction name="actionSt"/>
+   <addaction name="actionTl"/>
+   <addaction name="separator"/>
+   <addaction name="actionAm"/>
+   <addaction name="actionBk"/>
+   <addaction name="actionMs"/>
+   <addaction name="actionSh"/>
+  </widget>
+  <action name="actionNa">
+   <property name="text">
+    <string>Nucleic Acid</string>
+   </property>
+   <property name="toolTip">
+    <string>Nucleic Acid</string>
+   </property>
+  </action>
+  <action name="actionPt">
+   <property name="text">
+    <string>Protein</string>
+   </property>
+   <property name="toolTip">
+    <string>Protein</string>
+   </property>
+  </action>
+  <action name="actionCc">
+   <property name="text">
+    <string>Cell Culture</string>
+   </property>
+   <property name="toolTip">
+    <string>Cell Culture</string>
+   </property>
+  </action>
+  <action name="actionUv">
+   <property name="text">
+    <string>UV-VIS</string>
+   </property>
+   <property name="toolTip">
+    <string>UV-VIS</string>
+   </property>
+  </action>
+  <action name="actionMa">
+   <property name="text">
+    <string>Micro Array</string>
+   </property>
+   <property name="toolTip">
+    <string>Micro Array</string>
+   </property>
+  </action>
+  <action name="actionDy">
+   <property name="text">
+    <string>Dynamics</string>
+   </property>
+   <property name="toolTip">
+    <string>Dynamics</string>
+   </property>
+  </action>
+  <action name="actionKm">
+   <property name="text">
+    <string>Kit Method</string>
+   </property>
+   <property name="toolTip">
+    <string>Kit Method</string>
+   </property>
+  </action>
+  <action name="actionDc">
+   <property name="text">
+    <string>Device Check</string>
+   </property>
+   <property name="toolTip">
+    <string>Device Check</string>
+   </property>
+  </action>
+  <action name="actionCt">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Temperture</string>
+   </property>
+   <property name="toolTip">
+    <string>Temperture</string>
+   </property>
+  </action>
+  <action name="actionSt">
+   <property name="text">
+    <string>Setings</string>
+   </property>
+   <property name="toolTip">
+    <string>Setings</string>
+   </property>
+  </action>
+  <action name="actionTl">
+   <property name="text">
+    <string>Tools</string>
+   </property>
+   <property name="toolTip">
+    <string>Tools</string>
+   </property>
+  </action>
+  <action name="actionBk">
+   <property name="text">
+    <string>Blank</string>
+   </property>
+   <property name="toolTip">
+    <string>Blank</string>
+   </property>
+  </action>
+  <action name="actionMs">
+   <property name="text">
+    <string>Measure</string>
+   </property>
+   <property name="toolTip">
+    <string>Measure</string>
+   </property>
+  </action>
+  <action name="actionSh">
+   <property name="text">
+    <string>Shut Down</string>
+   </property>
+   <property name="toolTip">
+    <string>Shut</string>
+   </property>
+  </action>
+  <action name="actionAm">
+   <property name="text">
+    <string>Auto Measure</string>
+   </property>
+   <property name="toolTip">
+    <string>Auto</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

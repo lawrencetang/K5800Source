@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DyDialog</class>
+ <widget class="QDialog" name="DyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dynamics</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: rgb(255, 255, 255);
+}
+
+/*checkbox字体和间距设置*/
+QCheckBox{
+	spacing: 10px;
+	font: 12pt &quot;黑体&quot;;
+}
+
+/*checkbox样式设置*/
+QCheckBox::indicator { 
+	width: 64px;
+	height: 32px;
+}
+/*未选中*/
+QCheckBox::indicator::unchecked {	
+	image: url(:/icons/uncheck1.png);
+}
+/*选中*/
+QCheckBox::indicator::checked { 
+	image: url(:/icons/check1.png);
+}
+
+QPushButton,QLabel,QLineEdit,QSpinBox,QDoubleSpinBox{
+	min-height:48px;
+	font: 12pt &quot;黑体&quot;;
+}
+
+QGroupBox{
+	font: Bold 14pt &quot;黑体&quot;;
+}
+
+/*spinbox 抬起样式*/
+QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right;
+	image: url(:/icons/up_left.png);
+	background-color: rgb(255, 255, 255);
+    width: 36px;
+    height: 50px;       
+}
+QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:left;
+	image: url(:/icons/up_right.png);
+	background-color: rgb(255, 255, 255);
+    width: 36px;
+    height: 50px;
+}
+
+/*按钮按下样式*/
+QTimeEdit::up-button:pressed,QDoubleSpinBox::up-button:pressed,QSpinBox::up-button:pressed{subcontrol-origin:border;
+    subcontrol-position:right;
+    image: url(:/icons/up_left.png);
+	background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 49px;       
+}
+  
+QTimeEdit::down-button:pressed,QDoubleSpinBox::down-button:pressed,QSpinBox::down-button:pressed,QSpinBox::down-button:pressed{
+    subcontrol-position:left;
+    image: url(:/icons/up_right.png);
+	background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 49px;   
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Target</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+        <item>
+         <widget class="QLabel" name="wl1Label">
+          <property name="text">
+           <string>Wave Length1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="wl1SpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="suffix">
+           <string> nm</string>
+          </property>
+          <property name="minimum">
+           <number>200</number>
+          </property>
+          <property name="maximum">
+           <number>850</number>
+          </property>
+          <property name="value">
+           <number>200</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,1">
+        <item>
+         <widget class="QCheckBox" name="tvCheckBox">
+          <property name="text">
+           <string>Target Value</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="tvDoubleSpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="maximum">
+           <double>1000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,1">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Train Times </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="mtSpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>251</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">QDialog{
+	background-color: rgb(255, 255, 255);
+}
+
+/*checkbox字体和间距设置*/
+QCheckBox{
+	spacing: 10px;
+	font: 12pt &quot;黑体&quot;;
+}
+
+/*checkbox样式设置*/
+QCheckBox::indicator { 
+	width: 64px;
+	height: 32px;
+}
+/*未选中*/
+QCheckBox::indicator::unchecked {	
+	image: url(:/icons/uncheck1.png);
+}
+/*选中*/
+QCheckBox::indicator::checked { 
+	image: url(:/icons/check1.png);
+}
+
+QPushButton,QLabel,QLineEdit,QSpinBox{
+	min-height:48px;
+	font: 12pt &quot;黑体&quot;;
+}
+
+QGroupBox{
+	font: Bold 14pt &quot;黑体&quot;;
+}
+</string>
+     </property>
+     <property name="title">
+      <string>Watch</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="wl2CheckBox">
+          <property name="text">
+           <string>Wave Length2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="wl2SpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="suffix">
+           <string> nm</string>
+          </property>
+          <property name="minimum">
+           <number>200</number>
+          </property>
+          <property name="maximum">
+           <number>850</number>
+          </property>
+          <property name="value">
+           <number>200</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="wl4CheckBox">
+          <property name="text">
+           <string>Wave Length4</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="wl4SpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="suffix">
+           <string> nm</string>
+          </property>
+          <property name="minimum">
+           <number>200</number>
+          </property>
+          <property name="maximum">
+           <number>850</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCheckBox" name="wl3CheckBox">
+          <property name="text">
+           <string>Wave Length3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="wl3SpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="suffix">
+           <string> nm</string>
+          </property>
+          <property name="minimum">
+           <number>200</number>
+          </property>
+          <property name="maximum">
+           <number>850</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="wl5CheckBox">
+          <property name="text">
+           <string>Wave Length5</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="wl5SpinBox">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="suffix">
+           <string> nm</string>
+          </property>
+          <property name="minimum">
+           <number>200</number>
+          </property>
+          <property name="maximum">
+           <number>850</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelPBtn">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="okPBtn">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

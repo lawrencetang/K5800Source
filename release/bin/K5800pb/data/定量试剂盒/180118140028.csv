@@ -1,0 +1,9 @@
+header:,ID,Name,Measure,Type,Wave,Unit,Fit-Func,Fit-Order,Fit-R^2,Fit-Coef,FileName
+record:,1,BIOFUTURE,Kit Method,BCA,562,mg/mL,y=nanx^1+nan,1,nan,nan;nan,180118140028.csv
+data:,0.0679748,0,1
+data:,0.241829,0,1
+data:,0.164762,0,1
+
+0.446304
+nan
+1

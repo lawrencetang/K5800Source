@@ -1,0 +1,8 @@
+header:,ID,Name,Measure,Type,Wave,Unit,Fit-Func,Fit-Order,Fit-R^2,Fit-Coef,FileName
+record:,1,KAIAO,Kit Method,BCA,562,mg/mL,y=nanx^1+nan,1,nan,nan;nan,171209164410.csv
+data:,-0.0921823,4,1
+data:,-0.0691788,6,1
+
+0.0309038
+nan
+1

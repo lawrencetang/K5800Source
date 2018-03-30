@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/check.png</file>
+        <file>icons/file.png</file>
+        <file>icons/fit.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/measure.png</file>
+        <file>icons/uint.png</file>
+        <file>icons/uncheck.png</file>
+        <file>icons/check1.png</file>
+        <file>icons/uncheck1.png</file>
+        <file>icons/type.png</file>
+        <file>icons/optical.png</file>
+        <file>icons/Temperture.png</file>
+        <file>icons/seting.png</file>
+        <file>icons/start.png</file>
+        <file>icons/stop.png</file>
+        <file>icons/connect.png</file>
+        <file>icons/cuvette.png</file>
+        <file>icons/cuvette_e.png</file>
+        <file>icons/disconnect.png</file>
+        <file>icons/dna.png</file>
+        <file>icons/macroscale.png</file>
+        <file>icons/macroscale_e.png</file>
+        <file>icons/mainboard.png</file>
+        <file>icons/mainboard_e.png</file>
+        <file>icons/temperature.png</file>
+        <file>icons/temperature_e.png</file>
+        <file>icons/test.png</file>
+        <file>icons/up_left.png</file>
+        <file>icons/up_right.png</file>
+        <file>icons/save.png</file>
+    </qresource>
+</RCC>

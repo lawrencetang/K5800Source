@@ -1,0 +1,8 @@
+header:,ID,Name,Measure,Type,Wave,Unit,Fit-Func,Fit-Order,Fit-R^2,Fit-Coef,FileName
+record:,1,S,Kit Method,BCA,562,mg/mL,y=116.178x^1+58.5916,1,1,116.178;58.5916,171206120059.csv
+data:,-0.478505,3,1
+data:,-0.409645,11,1
+
+-0.243333
+30.3217
+1
