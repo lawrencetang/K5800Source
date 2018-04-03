@@ -92,7 +92,7 @@ bool AbsoDataModel::setData(QVector<int> keys,
     int index = keys.indexOf( m_bwl );//lt:基准波长的波长值的指数
     double zero = 0;
     if (index != -1) {
-        if (index != 850) {
+        if (m_bwl != 850) {
             zero = absos.at( index );//lt:基准波长的吸光度值
         }
         else {
